@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Design Patterns.iml" filepath="$PROJECT_DIR$/.idea/Design Patterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/Observer/Observer.iml" filepath="$PROJECT_DIR$/Observer/Observer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/strategy/opdracht/StrategyPattern/StrategyPattern.iml" filepath="$PROJECT_DIR$/strategy/opdracht/StrategyPattern/StrategyPattern.iml" />
+      <module fileurl="file://D:\PATRICK\DOCUMENTEN\GitHub\DesignPatterns\strategy\opdracht\StrategyPattern\StrategyPattern.iml" filepath="D:\PATRICK\DOCUMENTEN\GitHub\DesignPatterns\strategy\opdracht\StrategyPattern\StrategyPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/strategy/opdracht/opdracht.iml" filepath="$PROJECT_DIR$/strategy/opdracht/opdracht.iml" />
       <module fileurl="file://$PROJECT_DIR$/strategy/strategy.iml" filepath="$PROJECT_DIR$/strategy/strategy.iml" />
     </modules>
