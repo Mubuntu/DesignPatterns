@@ -1,16 +1,18 @@
-package weather;
+package weatherobservable;
+
+import java.util.*;
 
 /**
  * Created by patrick on 7/23/2017.
  */
-public class ForecastDisplay implements Observer, DisplayElement {
+public class ForecastDisplay implements java.util.Observer, DisplayElement {
     private float currentPressure = 29.92f;
     private float lastPressure;
-    private WeatherData weatherData;
+    private Observable observable;
 
-    public ForecastDisplay(WeatherData weatherData) {
-        this.weatherData = weatherData;
-        weatherData.registerObserver(this);
+    public ForecastDisplay(Observable observable) {
+        this.observable = observable;
+        observable.addObserver(this);
     }
 
 
@@ -28,10 +30,14 @@ public class ForecastDisplay implements Observer, DisplayElement {
         }
     }
 
+
     @Override
-    public void update(float temp, float humidity, float pressure) {
-        lastPressure = currentPressure;
-        currentPressure = pressure;
-        display();
+    public void update(Observable o, Object arg) {
+        if (o instanceof WeatherData){
+            WeatherData weatherData = (WeatherData) o;
+            lastPressure = currentPressure;
+            currentPressure = weatherData.getPressure();
+            display();
+        }
     }
 }

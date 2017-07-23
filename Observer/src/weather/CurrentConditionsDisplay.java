@@ -18,6 +18,8 @@ public class CurrentConditionsDisplay implements Observer,DisplayElement{
         //prints out most recent temp + humidity
         System.out.println("Current Conditions: "+ temperature
                 +"F degrees and "+ humidity+" % humidity");
+        System.out.println("=========================================");
+
     }
 
     @Override

@@ -1,4 +1,4 @@
-package weather;
+package weatherobservable;
 
 /**
  * Created by Patrick on 23/07/2017.
